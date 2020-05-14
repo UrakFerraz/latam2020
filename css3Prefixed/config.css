@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+:root {
+	--h1Size: clamp(1.8rem, 3.3vw, 3.4rem);
+	--h2Size: clamp(1.6rem, 2vw, 3rem);
+	--h3Size: clamp(1.4rem, 1.7vw, 2.5rem);
+	--h4Size: clamp(1.3rem, 2.1vw, 2rem);
+	--h5Size: clamp(1.2rem, 1.9vw, 1.7rem);
+	--pSize: clamp(1.1rem, 1.6vw, 1.3rem);
+	--spanSize: clamp(1rem, 1.3vw, 1rem);
+
+	--thin: 100;
+    --extra-light: 200;
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
+    --extra-bold: 800;
+    --black: 900;
+
+    --redColor: #CA2332;
+    --primaryColor: #ff7802;
+    --yellowColor: #EEE8A9;
+    --greenColor: #5DBFBE;
+    --secondaryColor: #164845;
+    --darkGreenColor: #164845;
+    --darkGreenColorTwo: #156d79;
+    --darkBlueColor: #162f57;
+    --goldColor: #e1d3b6;
+    --blueColor: #1771F1;
+    --grayColor: #939598;
+    --secondaryColor: #231F20;
+    --mediumGrayColor: #BCBEC0;
+    --lightGrayColor: #E0E5EC;
+    --imaxGradient: linear-gradient(27deg, rgba(202,50,35,1) 0%, rgba(101,104,113,1) 50%, rgba(93,191,190,1) 100%);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+div, p, h1, h2, h3, h4, h5, a, input, button, section, ul, li, footer, a {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-transition: 0.5s ease all;
+	-o-transition: 0.5s ease all;
+	transition: 0.5s ease all;
+	outline: none;
+	border: none;
+}
+
+.content {
+	width: clamp(320px, 100%, 2000px);
+	overflow: hidden;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+	margin: 0 auto;
+}
+
+.block {
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.grid {
+	display: -ms-grid;
+	display: grid;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+
+amp-img.contain img {
+-o-object-fit: contain;
+   object-fit: contain;
+}
+
+amp-img.cover img {
+-o-object-fit: cover;
+   object-fit: cover;
+}
+
+.heroTextWrapper * {
+	color: var(--f1);
+}
+
+a {
+	text-decoration: none;
+	display: block;
+	cursor: pointer;
+	pointer-events: all;
+}
+
+.shadow-6 {
+	-webkit-box-shadow:
+		0 1px 1px rgba(0,0,0,0.11),
+		0 2px 2px rgba(0,0,0,0.11),
+		0 4px 4px rgba(0,0,0,0.11),
+		0 8px 8px rgba(0,0,0,0.11),
+		0 16px 16px rgba(0,0,0,0.11),
+		0 32px 32px rgba(0,0,0,0.11);
+	        box-shadow:
+		0 1px 1px rgba(0,0,0,0.11),
+		0 2px 2px rgba(0,0,0,0.11),
+		0 4px 4px rgba(0,0,0,0.11),
+		0 8px 8px rgba(0,0,0,0.11),
+		0 16px 16px rgba(0,0,0,0.11),
+		0 32px 32px rgba(0,0,0,0.11);
+}
+
+h1 {
+	font-size: var(--h1Size);
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	color: var(--secondaryColor);
+
+}
+
+h2 {
+	font-size: var(--h2Size);
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	color: var(--secondaryColor);
+
+}
+
+h3 {
+	font-size: var(--h3Size);
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	color: var(--secondaryColor);
+
+}
+
+h4 {
+	font-size: var(--h4Size);
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	color: var(--secondaryColor);
+
+}
+
+h5 {
+	font-size: var(--h5Size);
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	color: var(--secondaryColor);
+
+}
+
+p {
+	font-size: var(--pSize);
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	color: var(--secondaryColor);
+
+}
+
+span {
+	font-size: var(--spanSize);
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	color: var(--secondaryColor);
+
+}
+
+svg {
+	display: block;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	position: relative;
+	pointer-events: none;
+	-webkit-transition: 0.5s ease all;
+	-o-transition: 0.5s ease all;
+	transition: 0.5s ease all;
+}
+
+
+/* unvisited link */
+a:link {
+  color: var(--primaryColor);
+}
+/* visited link */
+a:visited {
+  color: var(--primaryColor);
+}
+/* selected link */
+a:active {
+  color: var(--primaryColor);
+}
+
+::-webkit-input-placeholder {
+	color: var(--primaryColor);
+	font-weight: var(--medium);
+}
+
+::-moz-placeholder {
+	color: var(--primaryColor);
+	font-weight: var(--medium);
+}
+
+:-ms-input-placeholder {
+	color: var(--primaryColor);
+	font-weight: var(--medium);
+}
+
+::-ms-input-placeholder {
+	color: var(--primaryColor);
+	font-weight: var(--medium);
+}
+
+::placeholder {
+	color: var(--primaryColor);
+	font-weight: var(--medium);
+}
+
+:-ms-input-placeholder {
+	color: var(--primaryColor);
+	font-weight: var(--medium);
+}
+
+::-ms-input-placeholder {
+	color: var(--primaryColor);
+	font-weight: var(--medium);
+}
+
+::-moz-selection {
+  background: var(--primaryColor);
+  color: var(--white);
+}
+
+::selection {
+  background: var(--primaryColor);
+  color: var(--white);
+}
+
+::-moz-selection {
+  background: var(--primaryColor);
+  color: var(--white);
+}
+
+
+
+
+
